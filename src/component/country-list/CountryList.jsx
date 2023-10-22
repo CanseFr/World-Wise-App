@@ -1,10 +1,23 @@
+import Spinner from "../spinner/Spinner.jsx";
+import Message from "../message/Message.jsx";
+import styles from "./CountryList.module.css";
+import CountryItem from "../country-item/CountryItem.jsx";
 
-function CountryList() {
+export default function CountryList({cities, isLoading}) {
 
+  if(isLoading) return <Spinner/>
+  if(!cities.length) return <Message message="Add your country by clicking a country on the map."/>
+
+  const countries = cities.reduce((arr, city) => {
+      if (!arr.map((el) => el.country).includes(city.country))
+        return [...arr, {country: city.country, emoji : city.emoji}]
+      else return arr
+      }, [])
 
   return (
-   <div></div>
+      <ul className={styles.countryList}>
+        {countries.map((country) => <CountryItem country={country} key={country.id}/>)}
+      </ul>
   );
 }
 
-export default CountryList;
