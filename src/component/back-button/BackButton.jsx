@@ -1,8 +1,13 @@
+import Button from "../button/Button.jsx";
+import {useNavigate} from "react-router-dom";
 
 function BackButton() {
-
+  const navigate = useNavigate()
   return (
-   <div></div>
+      <Button type='back' onClick={(e)=> {
+        e.preventDefault()
+        navigate(-1)
+      }}>Back</Button>
   );
 }
 
