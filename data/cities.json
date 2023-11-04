@@ -35,6 +35,198 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Dangeni",
+      "country": "Romania",
+      "emoji": "🇷🇴",
+      "date": "2023-11-04T17:29:22.754Z",
+      "notes": "",
+      "position": {
+        "lat": "47.90161354142077",
+        "lng": "26.9384765625"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Dangeni",
+      "country": "Romania",
+      "emoji": "🇷🇴",
+      "date": "2023-11-04T17:29:22.754Z",
+      "notes": "",
+      "position": {
+        "lat": "47.90161354142077",
+        "lng": "26.9384765625"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Nahirianka",
+      "country": "Ukraine",
+      "emoji": "🇺🇦",
+      "date": "2023-11-04T17:31:16.712Z",
+      "notes": "ert",
+      "position": {
+        "lat": "48.92430395329745",
+        "lng": "25.694274902343754"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443202
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443203
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443204
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443205
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443206
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443207
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443208
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443209
+    },
+    {
+      "cityName": "Cepeda la Mora",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-11-04T17:32:13.680Z",
+      "notes": "",
+      "position": {
+        "lat": "40.45321727150385",
+        "lng": "-5.064697265625001"
+      },
+      "id": 98443210
+    },
+    {
+      "cityName": "Reggane",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-11-04T17:33:39.546Z",
+      "notes": "oih",
+      "position": {
+        "lat": "25.005972656239187",
+        "lng": "0"
+      },
+      "id": 98443211
+    },
+    {
+      "cityName": "Reggane",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-11-04T17:38:42.980Z",
+      "notes": "",
+      "position": {
+        "lat": "24.966140159912975",
+        "lng": "-0.38177490234375006"
+      },
+      "id": 98443212
+    },
+    {
+      "cityName": "Reggane",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2023-11-04T17:41:46.731Z",
+      "notes": "jyg",
+      "position": {
+        "lat": "24.559614286039903",
+        "lng": "0.15106201171875003"
+      },
+      "id": 98443213
     }
   ]
 }
