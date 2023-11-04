@@ -24,8 +24,6 @@ const BASE_URL = 'http://api.bigdatacloud.net/data/reverse-geocode-client'
 
 export default function Form() {
 
-
-    // const navigate = useNavigate()
     const [lat, lng] = useUrlPosition()
     const {createCity, isLoading} = useCities()
     const navigate = useNavigate()
@@ -97,11 +95,6 @@ export default function Form() {
 
             <div className={styles.row}>
                 <label htmlFor="date">When did you go to {cityName}?</label>
-                {/*<input*/}
-                {/*    id="date"*/}
-                {/*    onChange={(e) => setDate(e.target.value)}*/}
-                {/*    value={date}*/}
-                {/*/>*/}
                 <DatePicker id="date" onChange={date => setDate(date)} selected={date} dateFormat='dd/MM/yyyy'/>
             </div>
 
