@@ -22,12 +22,11 @@ export function convertToEmoji(countryCode) {
 const BASE_URL = 'http://api.bigdatacloud.net/data/reverse-geocode-client'
 
 
-
 export default function Form() {
 
 
     // const navigate = useNavigate()
-    const [lat,lng] = useUrlPosition()
+    const [lat, lng] = useUrlPosition()
     const {createCity, isLoading} = useCities()
     const navigate = useNavigate()
 
@@ -40,8 +39,8 @@ export default function Form() {
     const [geocodingError, setGeocodingError] = useState('')
 
     useEffect(() => {
-        async function fetchCityData(){
-            try{
+        async function fetchCityData() {
+            try {
                 setIsloadingGeocoding(true)
                 setGeocodingError("")
                 const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}`)
@@ -52,12 +51,13 @@ export default function Form() {
                 setCityName(data.city || data.locality || "")
                 setCountry(data.countryName)
                 setEmoji(convertToEmoji(data.countryCode))
-            }catch (err){
+            } catch (err) {
                 setGeocodingError(err.message)
-            }finally {
+            } finally {
                 setIsloadingGeocoding(false)
             }
         }
+
         fetchCityData()
     }, [lat, lng]);
 
@@ -65,23 +65,22 @@ export default function Form() {
     async function handleSubmit(e) {
         e.preventDefault()
         if (!cityName || !date) return;
-        const  newCity = {
+        const newCity = {
             cityName,
             country,
             emoji,
             date,
             notes,
-            position:{lat,lng}
+            position: {lat, lng}
         }
         await createCity(newCity)
         navigate("/app/cities")
     }
 
 
-    if (isLoadingGeocoding) return <Spinner />
-    if (geocodingError) return <Message message={geocodingError} />
-    if(!lat && !lng) return <Message message={"Start by clicking on the map !"} />
-
+    if (isLoadingGeocoding) return <Spinner/>
+    if (geocodingError) return <Message message={geocodingError}/>
+    if (!lat && !lng) return <Message message={"Start by clicking on the map !"}/>
 
 
     return (
@@ -93,7 +92,7 @@ export default function Form() {
                     onChange={(e) => setCityName(e.target.value)}
                     value={cityName}
                 />
-                 <span className={styles.flag}>{emoji}</span>
+                <span className={styles.flag}>{emoji}</span>
             </div>
 
             <div className={styles.row}>
