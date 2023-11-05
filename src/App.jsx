@@ -11,6 +11,7 @@ import CountryList from "./component/country-list/CountryList.jsx";
 import City from "./component/city/City.jsx"
 import Form from "./component/form/Form.jsx"
 import {AuthProvider} from "./contexts/FakeAuthContext.jsx";
+import ProtectedRoute from "./pages/protected-route/ProtectedRoute.jsx";
 
 
 export default function App() {
@@ -24,13 +25,13 @@ export default function App() {
                             <Route path="product" element={<Product/>}/>
                             <Route path="pricing" element={<Pricing/>}/>
                             <Route path="login" element={<Login/>}/>
-                            <Route path="app" element={<AppLayout/>}>
-                                <Route index element={<Navigate replace to={'cities'}/>}/>
-                                <Route path="cities" element={<CityList/>}/>
-                                <Route path="cities/:id" element={<City/>}/>
-                                <Route path="countries" element={<CountryList/>}/>
-                                <Route path="form" element={<Form/>}/>
-                            </Route>
+                            <Route path="app" element={<ProtectedRoute><AppLayout/></ProtectedRoute>}>
+                                    <Route index element={<Navigate replace to={'cities'}/>}/>
+                                    <Route path="cities" element={<CityList/>}/>
+                                    <Route path="cities/:id" element={<City/>}/>
+                                    <Route path="countries" element={<CountryList/>}/>
+                                    <Route path="form" element={<Form/>}/>
+                                </Route>
                             <Route path="*" element={<PageNotFound/>}/>
                         </Routes>
                     </BrowserRouter>
